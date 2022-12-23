@@ -31,7 +31,7 @@ const ChartComponent = ({ data }) => {
         xAxisName: 'Repos',
         xAxisNameFontSize: '16px',
         yAxisNameFontSize: '16px',
-        theme: 'gammel',
+        theme: 'umber',
       },
       // Chart Data
       data,
