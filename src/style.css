@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  overflow-x: hidden;
+}
+#portal {
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+#portal.active {
+  opacity: 1;
+}
+body {
+  overflow-x: hidden;
+}
+
+.search-input {
+  transition: 0.3s ease-in-out;
+  /* padding-left: 10px; */
+}
+.search-input.active {
+  width: 20rem;
+  /* padding: 0.5rem; */
+  background-color: white;
+}
+.search-input.active .search-icon {
+  color: black;
+}
+
+.search-bar input {
+  /* transition: 0.3s ease-in-out; */
+  width: 18rem;
+  /* padding: 1rem; */
+}
+.search-input.active input {
+  /* width: 18rem; */
+  display: block;
+}
+
+.section-center {
+  display: grid;
+  justify-items: center;
+  gap: 2rem;
+}
+@media (min-width: 800px) {
+  .section-center {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-center {
+    grid-template-columns: 2fr 3fr;
+  }
+}
+
+.section-center div {
+  width: 100% !important;
+}
+.section-center .fusioncharts-container {
+  width: 100% !important;
+}
+.section-center svg {
+  width: 100% !important;
+  border-radius: var(--radius) !important;
+}
