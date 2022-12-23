@@ -39,26 +39,26 @@ const SocialProfile = ({ user }) => {
   const renderSocialProfile = socialProfile.map((profile, index) => {
     return (
       <div
-        className="flex justify-between items-center w-1/3 md:w-1/6  p-3 md:px-5 shadow-lg shadow-gray-900 rounded-md"
+        className="flex items-center justify-between w-1/3 p-3 rounded-md shadow-lg md:w-1/6 md:px-5 shadow-gray-900"
         key={index}
       >
         <div className="flex flex-col">
-          <span className="text-gray-400 text-sm capitalize">
+          <span className="text-sm text-gray-400 capitalize">
             {profile.title.replaceAll('_', ' ')}
           </span>
-          <span className="text-3xl md:text-4xl font-bold">
+          <span className="text-3xl font-bold md:text-4xl">
             {profile[profile.title]}
           </span>
         </div>
 
-        <span className=" text-xl md:text-2xl text-pink-400">
+        <span className="text-xl text-green-300 md:text-2xl">
           {profile.icon}
         </span>
       </div>
     );
   });
   return (
-    <div className="flex flex-wrap items-center w-full  justify-center gap-10 my-10">
+    <div className="flex flex-wrap items-center justify-center w-full gap-10 my-10">
       {renderSocialProfile}
     </div>
   );
